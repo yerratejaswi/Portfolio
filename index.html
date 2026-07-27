@@ -46,13 +46,11 @@
   .wrap{ max-width: 1080px; margin: 0 auto; padding: 0 32px; position: relative; z-index: 1; }
   ::selection{ background: var(--accent-soft); color: var(--accent); }
 
-  /* focus visibility */
   a:focus-visible, button:focus-visible{
     outline: 2px solid var(--accent);
     outline-offset: 3px;
   }
 
-  /* ---------- nav ---------- */
   header.nav{
     position: sticky; top:0; z-index: 50;
     background: rgba(11,18,32,0.82);
@@ -75,7 +73,6 @@
   nav.links a:hover{ color: var(--accent); }
   @media (max-width: 720px){ nav.links{ display:none; } }
 
-  /* ---------- hero ---------- */
   .hero{ padding: 96px 0 72px; }
   .hero-grid{
     display:grid; grid-template-columns: 1.1fr 0.9fr; gap: 56px; align-items: center;
@@ -117,7 +114,6 @@
   .meta-line{ font-family: var(--mono); font-size: 12.5px; color: var(--text-faint); display:flex; gap:18px; flex-wrap:wrap; }
   .meta-line span{ display:flex; align-items:center; gap:6px; }
 
-  /* ---------- signature: status panel ---------- */
   .panel{
     background: linear-gradient(180deg, var(--surface), var(--surface-2));
     border: 1px solid var(--border);
@@ -152,7 +148,6 @@
   .metric .val.teal{ color: var(--accent); }
   .metric .label{ font-family: var(--mono); font-size: 10.5px; color: var(--text-faint); margin-top: 4px; letter-spacing: 0.04em; }
 
-  /* pipeline diagram */
   .pipeline{ padding-top: 6px; }
   .pipeline svg{ width: 100%; height: auto; display:block; }
   .node-label{ font-family: var(--mono); font-size: 9.5px; fill: var(--text-dim); letter-spacing: 0.03em; }
@@ -160,7 +155,6 @@
   .flow-path{ fill:none; stroke: var(--border); stroke-width:1.4; }
   .packet{ fill: var(--accent); filter: drop-shadow(0 0 4px rgba(52,214,196,0.9)); }
 
-  /* ---------- section shell ---------- */
   section{ padding: 64px 0; border-top: 1px solid var(--border); }
   .section-head{ display:flex; align-items:baseline; gap: 14px; margin-bottom: 36px; }
   .section-num{ font-family: var(--mono); font-size: 12.5px; color: var(--accent); }
@@ -170,12 +164,10 @@
   }
   .section-rule{ flex:1; height:1px; background: var(--border); }
 
-  /* ---------- about ---------- */
   .about p{ max-width: 74ch; color: var(--text-dim); font-size: 16px; }
   .about p + p{ margin-top: 14px; }
   .about b{ color: var(--text); font-weight: 600; }
 
-  /* ---------- experience timeline ---------- */
   .tl-item{ display:grid; grid-template-columns: 160px 1fr; gap: 28px; padding: 28px 0; position: relative; }
   .tl-item + .tl-item{ border-top: 1px solid var(--border); }
   .tl-date{ font-family: var(--mono); font-size: 12.5px; color: var(--text-faint); padding-top: 3px; }
@@ -186,7 +178,6 @@
   .tl-list li::before{ content:"▸"; position:absolute; left:0; color: var(--accent); font-size: 12px; top:2px; }
   @media (max-width: 640px){ .tl-item{ grid-template-columns: 1fr; gap: 8px; } }
 
-  /* ---------- skills ---------- */
   .skill-groups{ display:grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 18px; }
   .skill-card{ background: var(--surface); border: 1px solid var(--border); border-radius: 8px; padding: 18px 20px; }
   .skill-card.highlight{ border-color: rgba(52,214,196,0.4); background: linear-gradient(180deg, rgba(52,214,196,0.06), var(--surface)); }
@@ -196,7 +187,6 @@
   .chip{ font-family: var(--mono); font-size: 12px; padding: 5px 10px; border-radius: 5px; background: rgba(255,255,255,0.03); border: 1px solid var(--border); color: var(--text-dim); }
   .highlight .chip{ border-color: rgba(52,214,196,0.25); color: var(--text); }
 
-  /* ---------- projects ---------- */
   .proj-grid{ display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px; }
   .proj-card{ background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 22px; display:flex; flex-direction:column; }
   .proj-card h3{ font-size: 16.5px; font-weight:600; margin-bottom: 10px; }
@@ -204,7 +194,6 @@
   .proj-tags{ display:flex; flex-wrap:wrap; gap:6px; margin-top: 16px; }
   .proj-tags span{ font-family: var(--mono); font-size: 10.5px; color: var(--text-faint); border: 1px solid var(--border); padding: 3px 8px; border-radius: 4px; }
 
-  /* ---------- research ---------- */
   .research-card{ background: var(--surface); border: 1px solid var(--border); border-radius: 10px; padding: 26px; }
   .research-card .badge{ display:inline-block; font-family: var(--mono); font-size: 10.5px; color: var(--amber); background: var(--amber-soft); border: 1px solid rgba(242,169,59,0.3); padding: 4px 10px; border-radius: 20px; margin-bottom: 14px; }
   .research-card h3{ font-size: 17px; font-weight:600; margin-bottom: 10px; }
@@ -217,7 +206,6 @@
   .flow-strip .stage{ background: var(--surface-2); border:1px solid var(--border); padding: 6px 12px; border-radius: 5px; }
   .flow-strip .arrow{ color: var(--text-faint); }
 
-  /* ---------- edu / certs ---------- */
   .ed-grid{ display:grid; grid-template-columns: 1.2fr 1fr; gap: 24px; }
   @media (max-width: 720px){ .ed-grid{ grid-template-columns: 1fr; } }
   .ed-card{ background: var(--surface); border:1px solid var(--border); border-radius:10px; padding:22px; }
@@ -229,7 +217,6 @@
   .cert-list li:last-child{ border-bottom:none; }
   .cert-list .org{ font-family: var(--mono); font-size: 11.5px; color: var(--text-faint); white-space: nowrap; }
 
-  /* ---------- footer ---------- */
   footer{ padding: 56px 0 60px; text-align:center; }
   footer .call{ font-family: var(--mono); font-size: 13px; color: var(--accent); letter-spacing: 0.06em; margin-bottom: 18px; }
   footer h2.big{
@@ -263,7 +250,6 @@
 
 <main class="wrap">
 
-  <!-- HERO -->
   <section class="hero" style="border-top:none; padding-top:80px;">
     <div class="hero-grid">
       <div>
@@ -273,7 +259,6 @@
         <div class="cta-row">
           <a class="btn primary" href="mailto:tejaswi.yerra@outlook.com">Email me</a>
           <a class="btn ghost" href="https://linkedin.com/in/tejaswiredd" target="_blank" rel="noopener">LinkedIn ↗</a>
-          <a class="btn ghost" href="tel:+13125222788">+1 (312) 522-2788</a>
         </div>
         <div class="meta-line">
           <span>📍 Open to relocate</span>
@@ -311,8 +296,6 @@
             <text class="node-label" x="332" y="59" text-anchor="middle">SERVE</text>
             <text class="node-label" x="332" y="70" text-anchor="middle" style="fill:#5c709a; font-size:8px;">Spring Boot</text>
 
-            <rect class="node-box" x="420" y="34" width="0" height="0" opacity="0"/>
-
             <circle class="packet" r="3.4">
               <animateMotion dur="2.6s" repeatCount="indefinite" path="M40,55 H150" />
             </circle>
@@ -328,7 +311,6 @@
     </div>
   </section>
 
-  <!-- ABOUT -->
   <section id="about">
     <div class="section-head"><span class="section-num">// 01</span><h2>About</h2><div class="section-rule"></div></div>
     <div class="about">
@@ -338,7 +320,6 @@
     </div>
   </section>
 
-  <!-- EXPERIENCE -->
   <section id="experience">
     <div class="section-head"><span class="section-num">// 02</span><h2>Experience</h2><div class="section-rule"></div></div>
 
@@ -373,7 +354,6 @@
     </div>
   </section>
 
-  <!-- SKILLS -->
   <section id="skills">
     <div class="section-head"><span class="section-num">// 03</span><h2>Skills</h2><div class="section-rule"></div></div>
     <div class="skill-groups">
@@ -416,7 +396,6 @@
     </div>
   </section>
 
-  <!-- PROJECTS -->
   <section id="projects">
     <div class="section-head"><span class="section-num">// 04</span><h2>Projects</h2><div class="section-rule"></div></div>
     <div class="proj-grid">
@@ -438,7 +417,6 @@
     </div>
   </section>
 
-  <!-- RESEARCH -->
   <section id="research">
     <div class="section-head"><span class="section-num">// 05</span><h2>Independent Research</h2><div class="section-rule"></div></div>
     <div class="research-card">
@@ -461,7 +439,6 @@
     </div>
   </section>
 
-  <!-- EDUCATION / CERTS -->
   <section id="education">
     <div class="section-head"><span class="section-num">// 06</span><h2>Education &amp; Certifications</h2><div class="section-rule"></div></div>
     <div class="ed-grid">
@@ -489,7 +466,6 @@
     <div class="foot-links">
       <a class="btn ghost" href="mailto:tejaswi.yerra@outlook.com">Email</a>
       <a class="btn ghost" href="https://linkedin.com/in/tejaswiredd" target="_blank" rel="noopener">LinkedIn</a>
-      <a class="btn ghost" href="tel:+13125222788">Call</a>
     </div>
     <div class="foot-meta">Farmers Branch, TX · Open to relocate</div>
   </div>
